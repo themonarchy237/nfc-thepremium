@@ -1,0 +1,170 @@
+.profileContainer {
+  padding-top: 40px;
+}
+
+.profileCard {
+  border-radius: var(--radius-lg);
+  padding: 32px 24px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+}
+
+.avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: var(--radius-full);
+  background: rgba(194, 155, 98, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar.reward-pulse {
+  background: var(--success);
+  color: #fff;
+}
+
+.header h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--foreground);
+}
+
+.tagline {
+  color: #94a3b8;
+  font-size: 0.9rem;
+}
+
+.pointsDisplay {
+  display: flex;
+  justify-content: center;
+  margin: 32px 0;
+}
+
+.progressRingWrapper {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.progressRing {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+}
+
+.track {
+  fill: none;
+  stroke: rgba(255, 255, 255, 0.05);
+  stroke-width: 6;
+}
+
+.fill {
+  fill: none;
+  stroke: var(--primary);
+  stroke-width: 6;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 1s ease-in-out;
+}
+
+.pointsCount {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+
+.pointsCount h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1;
+  background: linear-gradient(135deg, #fff, #cbd5e1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.pointsCount span {
+  font-size: 0.9rem;
+  color: #94a3b8;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: 4px;
+}
+
+.rewardBanner {
+  background: rgba(16, 185, 129, 0.1);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  color: #10b981;
+  padding: 16px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+
+.managerSection {
+  margin-top: 32px;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #475569;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 24px;
+}
+
+.divider::before,
+.divider::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid var(--border);
+}
+
+.divider span {
+  padding: 0 16px;
+}
+
+.actionGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.actionBtn {
+  width: 100%;
+  flex-direction: column;
+  gap: 8px;
+  padding: 20px 12px;
+  border-radius: var(--radius-md);
+}
+
+.actionBtn span {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.actionBtn small {
+  font-size: 0.75rem;
+  opacity: 0.8;
+  font-weight: 400;
+}
